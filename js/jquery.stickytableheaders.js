@@ -54,7 +54,7 @@
 				// remove padding on <table> to fix issue #7
 				$this.css('padding', 0);
 
-				base.$originalHeader = $('thead:first', this);
+				base.$originalHeader = $('> thead:first', this);
 				base.$clonedHeader = base.$originalHeader.clone();
 				$this.trigger('clonedHeader.' + name, [base.$clonedHeader]);
 
